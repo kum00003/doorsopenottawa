@@ -1,4 +1,4 @@
-package com.algonquincolleg.kum00003.demogooglemap;
+package com.algonquincolleg.kum00003.doorsopenottawa;
 
 import org.junit.Test;
 

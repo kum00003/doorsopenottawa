@@ -1,4 +1,4 @@
-package com.algonquincolleg.kum00003.demogooglemap;
+package com.algonquincolleg.kum00003.doorsopenottawa;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.algonquincolleg.kum00003.demogooglemap", appContext.getPackageName());
+        assertEquals("com.algonquincolleg.kum00003.doorsopenottawa", appContext.getPackageName());
     }
 }
