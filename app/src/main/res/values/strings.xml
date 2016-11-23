@@ -2,4 +2,7 @@
     <string name="app_name">Doors Open Ottawa</string>
     <string name="get_data">Get Data</string>
     <string name="building_name_placeholder">Building Name</string>
+    <string name="building_address_placeholder">Building Address</string>
+    <string name="action_about">About</string>
+
 </resources>

@@ -20,7 +20,10 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.Locale;
-
+/**
+ * Created by Sercan on 11/22/16.
+ * Created by David on 11/22/16.
+ */
 
 public class DetailActivity extends FragmentActivity implements OnMapReadyCallback {
         private GoogleMap mMap;
@@ -41,6 +44,7 @@ protected void onCreate(Bundle savedInstanceState) {
             TextView buildingname = (TextView) findViewById(R.id.buildingName);
             TextView description = (TextView) findViewById(R.id.description);
             TextView address = (TextView) findViewById(R.id.address);
+            TextView date = (TextView) findViewById(R.id.Hours);
             Button btnClose = (Button) findViewById(R.id.btnClose);
 
 
@@ -49,11 +53,13 @@ protected void onCreate(Bundle savedInstanceState) {
             String name = i.getStringExtra("name");
             String descriptiontext = i.getStringExtra("description");
             addressText = i.getStringExtra("address");
+            String dateText = i.getStringExtra("date");
 
             // Displaying Received data
             buildingname.setText(name);
             description.setText(descriptiontext);
             address.setText(addressText);
+            date.setText(dateText);
 
             btnClose.setOnClickListener(new View.OnClickListener() {
 

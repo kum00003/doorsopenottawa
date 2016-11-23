@@ -28,10 +28,14 @@ import model.Building;
  *
  * Based on the Adapter OO Design Pattern.
  *
- * @author Gerald.Hurdle@AlgonquinCollege.com
+ * /**
+ * Created by Sercan on 11/22/16.
+ * Created by David on 11/22/16.
+ *
  *
  * Reference: based on DisplayList in "Connecting Android Apps to RESTful Web Services" with David Gassner
  */
+
 public class BuildingAdapter extends ArrayAdapter<Building> {
 
     private Context context;
@@ -64,7 +68,7 @@ public class BuildingAdapter extends ArrayAdapter<Building> {
         TextView tv = (TextView) view.findViewById(R.id.textView1);
         tv.setText(building.getName());
         TextView tv2 = (TextView) view.findViewById(R.id.textView2);
-        tv.setText(building.getAddress());
+        tv2.setText(building.getAddress());
 
         Bitmap bitmap = imageCache.get(building.getBuildingID());
         if (bitmap != null) {
